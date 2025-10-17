@@ -1,0 +1,131 @@
+/* Tema claro (default) */
+:root {
+  --bg-color: #f7f7f7;
+  --header-bg: #202833;
+  --text-color: #000000;
+  --button-bg: #2563eb;
+  --button-text: #ffffff;
+  --card-bg: #f1f1f1;
+  --input-bg: #ffffff;
+  --input-border: #ccc;
+}
+ 
+/* Tema oscuro */
+body.dark {
+  --bg-color: #202833;
+  --header-bg: #121822;
+  --text-color: #ffffff;
+  --button-bg: #2563eb;
+  --button-text: #ffffff;
+  --card-bg: #2a2f3a;
+  --input-bg: #1e242f;
+  --input-border: #444;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+ 
+.container {
+  background-color: var(--bg-color);
+  width: 380px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+  padding-bottom: 40px;
+}
+ 
+header {
+  background-color: var(--header-bg);
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+header h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0;
+}
+ 
+header button {
+  background-color: #2563eb;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+ 
+header button:hover {
+  background-color: #1e4ecc;
+}
+ 
+section {
+  padding: 20px;
+}
+ 
+h2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+ 
+.services .service-list {
+  display: flex;
+  gap: 10px;
+}
+ 
+.service-item {
+  background-color: var(--card-bg);
+  padding: 12px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  flex: 1;
+}
+ 
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ 
+.contact input[type="text"],
+.contact input[type="email"] {
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  border-radius: 3px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+ 
+.contact button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+}
+ 
+.contact button:hover {
+  background-color: #1e4ecc;
+}
